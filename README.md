@@ -18,7 +18,7 @@ jupyter notebook ./code/benchmark_app.ipynb
 - `code/`: 包含项目的主要代码文件。
   - `torchmetric.py`: 定义了基于 PyTorch 的指标计算工具。
   - `explainer.py`: 提供了模型解释器的实现。
-  - `appprior.py`: 计算外观先验概率的工具。
+  - `appprior.py`: 计算深度外观先验概率的工具。
   - `benchmark_app.ipynb`: 主程序入口，包含项目的运行逻辑。
 - `data/`: 包含项目的主要图片数据。
 - `requirements.txt`: 项目依赖文件。
