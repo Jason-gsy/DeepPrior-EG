@@ -1,42 +1,46 @@
+Here's the translated content in Markdown format:
+
 DeepPrior-EG
 
 Installation Dependencies
-First install the required dependencies for the project:
+First install the required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
 Running the Project
-Execute the following command to run the Jupyter Notebook in the project:
+Execute the following command to run the Jupyter Notebook:
 ```bash
 jupyter notebook ./code/benchmark_app.ipynb
 ```
 
-After opening the Notebook, run the code cells sequentially.
+After opening the Notebook, run code cells sequentially.
 
 Project Structure
-• `code/`: Contains the main code files of the project.
+• `code/`: Contains main code files
 
-  • `torchmetric.py`: Defines PyTorch-based metric calculation utilities.
+  • `torchmetric.py`: PyTorch-based metric calculation utilities
 
-  • `explainer.py`: Provides implementations of model explainers.
+  • `explainer.py`: Model explainer implementations
 
-  • `appprior.py`: Tool for computing deep appearance prior probabilities.
+  • `appprior.py`: Deep appearance prior probability calculator
 
-  • `benchmark_app.ipynb`: Main program entry point containing the project's execution logic.
+  • `benchmark_app.ipynb`: Main entry point with project execution logic
 
-• `data/`: Contains the primary image data for the project.
+• `data/`: Contains image datasets
 
-  • `imagenet50`: 50 ImageNet-like images provided by the SHAP library, completely excluded from model pre-training. These can be used to validate explanation methods in `benchmark_app.ipynb`.
+  • `imagenet50`: 50 SHAP-provided ImageNet-style images (never used in model pre-training) for validating explanation methods
 
-  • `imagenet_prior`: Binary contour images of 12 ImageNet categories, manually annotated.
+  • `imagenet_prior`: Manually annotated binary contour images for 12 ImageNet categories
 
-  • `ImageNet-1K`: ImageNet (ILSVRC) 2012, the most commonly used subset of ImageNet. The `val` subfolder contains the validation set for quantitative evaluation of explanation methods.
+  • `ImageNet-1K`: ImageNet (ILSVRC) 2012 subset
 
-• `requirements.txt`: Project dependency file.
+    ◦ `val`: Validation set for quantitative evaluation of explanation methods
+
+• `requirements.txt`: Dependency list
 
 
 Environment Requirements
 • Python 3.9+
 
-• CUDA support (optional, for accelerating deep learning models)
+• CUDA support (optional for DL acceleration)
