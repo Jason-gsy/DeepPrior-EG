@@ -20,10 +20,11 @@ jupyter notebook ./code/benchmark_app.ipynb
   - `explainer.py`: 提供了模型解释器的实现。
   - `appprior.py`: 计算深度外观先验概率的工具。
   - `benchmark_app.ipynb`: 主程序入口，包含项目的运行逻辑。
+  - `mnist.ipynb`: 加载mnist数据集，用于将Deep-Prior-EG等归因先验加入到mnist手写数字识别模型训练中。
 - `data/`: 包含项目的主要图片数据。
   - `imagenet50`: SHAP库中提供的50幅类似imgagenet的图像，完全未参与模型预训练的图片，可用于验证benchmark_app.ipynb中的解释方法。
   - `imagenet_prior`: 12个类别的imagenet图像的形状轮廓二值图像，由人工标注。
-  - `ImageNet-1K`: ImageNet (ILSVRC) 2012，这是 ImageNet 最常用的子集。该文件夹下val是验证集，可用于解释方法的定量评估。
+  - `ImageNet-1K`: ImageNet (ILSVRC) 2012，这是 ImageNet 最常用的子集。该文件夹下val是验证集，可用于解释方法的定量评估。建议前往官网申请下载https://www.image-net.org/。
 - `requirements.txt`: 项目依赖文件。
 
 ## 环境要求
